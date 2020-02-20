@@ -19,3 +19,20 @@ Neste exemplo os terminadores de linha são passados após a barra, mas também 
 http://www.example.net/index.php?lang=en%0D%0ASet-Cookie:mycookie=myvalue
 ```
 
+# CRLF + SSRF
+
+Podemos executar montar uma cadeia de ataques combinando a vulnerabilidade de CRLF Injection para obtermos um CRSF. Imagine a seguinte url:
+
+ ```html
+https://search.example.com/man?url=man.html
+```
+
+Pode-se utilizar a vulnerabilidade CRLF para desencadear o SSRF
+
+```
+https://search.example.com/man?url=http://127.0.0.1:21%0A%0Dman.html
+```
+
+
+
+
