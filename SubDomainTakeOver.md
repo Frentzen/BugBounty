@@ -80,6 +80,12 @@ EyeWitness pode se tornar pesado em casos que existam muitos subdominios, neste 
 ```bash
 meg -d 10 -c 200 / listadomain.txt
 ```
+Desta forma poderá ser feita a descoberta manual deste tipo de vulnerabilidade, porém com a ferramenta [subjack](https://github.com/haccer/subjack) fica mais fácil a identificação uma vez que a mesma automatiza a detecção baseada em *fingerprints* conhecidos.
+
+```bash
+./subjack -w subdomains.txt -t 100 -timeout 30 -o results.txt -ssl
+```
+
 # Referências
 
 https://www.hackerone.com/blog/Guide-Subdomain-Takeovers
