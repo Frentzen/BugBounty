@@ -69,6 +69,19 @@ a.ns.hackerone.com
 b.ns.hackerone.com
 support.hackerone.com
 ```
+Com os subdomínios descobertos iremos utilizar a ferramenta [EyeWitness](https://github.com/FortyNorthSecurity/EyeWitness) para realizar uma captura de tela das páginas iniciais de todos os links fornecidos. A ferramenta irá gerar um reporte em *html* de fácil visualização para o operador.
+
+```bash
+./EyeWitness -f listadomain.txt -d out --headless
+```
+
+EyeWitness pode se tornar pesado em casos que existam muitos subdominios, neste caso pode ser adotada a ferramenta [meg](https://github.com/tomnomnom/meg) que envia requisições do tipo **GET** para a página e as armazena em um arquivo de texto. Isto torna o processo mais rápido e para identificação de anomalias poderá ser utilizado comandos *grep* para filtragem por palavras chaves.
+
+```bash
+meg -d 10 -c 200 / listadomain.txt
+```
+
+
 
 https://www.hackerone.com/blog/Guide-Subdomain-Takeovers
 
