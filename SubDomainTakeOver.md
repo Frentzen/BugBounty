@@ -80,7 +80,9 @@ EyeWitness pode se tornar pesado em casos que existam muitos subdominios, neste 
 ```bash
 meg -d 10 -c 200 / listadomain.txt
 ```
+# Referências
 
 https://www.hackerone.com/blog/Guide-Subdomain-Takeovers
 
+https://github.com/EdOverflow/can-i-take-over-xyz
 
