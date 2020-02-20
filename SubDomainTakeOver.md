@@ -81,8 +81,6 @@ EyeWitness pode se tornar pesado em casos que existam muitos subdominios, neste 
 meg -d 10 -c 200 / listadomain.txt
 ```
 
-
-
 https://www.hackerone.com/blog/Guide-Subdomain-Takeovers
 
 
