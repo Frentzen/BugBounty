@@ -92,3 +92,5 @@ https://www.hackerone.com/blog/Guide-Subdomain-Takeovers
 
 https://github.com/EdOverflow/can-i-take-over-xyz
 
+https://opendata.rapid7.com/sonar.fdns_v2/
+
