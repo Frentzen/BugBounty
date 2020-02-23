@@ -95,3 +95,5 @@ https://github.com/EdOverflow/can-i-take-over-xyz
 https://opendata.rapid7.com/sonar.fdns_v2/
 
 https://gist.github.com/haccer/3698ff6927fc00c8fe533fc977f850f8
+
+https://github.com/arkadiyt/bounty-targets-data/blob/master/data/domains.txt
